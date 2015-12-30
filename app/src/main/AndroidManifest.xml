@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.BaseToolbarActivity" />
-        <activity android:name=".activity.ToolbarActivity"></activity>
+        <activity android:name=".activity.ToolbarActivity" />
+        <activity android:name=".activity.CustomToolbarActivity"></activity>
     </application>
 
 </manifest>
