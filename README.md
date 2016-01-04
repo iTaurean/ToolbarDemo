@@ -32,27 +32,27 @@ compile ‘com.android.support:appcompat-v7:22.2.1’
 ***知识补充：**在4.4以上的版本给Toolbar设置一个paddingTop的属性为status_bard高度，Toolbar就会延伸到status_bar的位置。另外，4.4系统status_bar默认是透明的，在5.0以上是半透明的。Status_bar的高度为25dp，获取status_bar高度方法:*
 
 ```
-    public int getStatusBarHeight() {
-        int result = 0;
-        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-        if (resourceId > 0) {
-            result = getResources().getDimensionPixelSize(resourceId);
-        }
-        return result;
+public int getStatusBarHeight() {
+    int result = 0;
+    int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+    if (resourceId > 0) {
+        result = getResources().getDimensionPixelSize(resourceId);
     }
+    return result;
+}
 ```
 
 
 ### 设置toolbar_padding_top值
 
 **需要在values/dimens，values-v19/dimens两个文件下设置这个值：**
-> values/dimens.xml下的值为0
+> values-v19/dimens.xml下的值为0
 
 
 ```
 <dimen name=”toolbar_padding_top”>25dp</dimen>
 ```
-> values-v19/dimens.xml下的值为25dp
+> values/dimens.xml下的值为25dp
 
 
 ```
