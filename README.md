@@ -46,13 +46,13 @@ public int getStatusBarHeight() {
 ### 设置toolbar_padding_top值
 
 **需要在values/dimens，values-v19/dimens两个文件下设置这个值：**
-> values-v19/dimens.xml下的值为0
+> values-v19/dimens.xml下的值为25dp
 
 
 ```
 <dimen name=”toolbar_padding_top”>25dp</dimen>
 ```
-> values/dimens.xml下的值为25dp
+> values/dimens.xml下的值为0dp
 
 
 ```
